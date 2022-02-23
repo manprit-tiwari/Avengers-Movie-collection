@@ -1,0 +1,151 @@
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .dropdown {
+                /* Border */
+                font-family: 'Outfit',sans-serif;
+                border: none;
+                display: flex;
+                color: rgb(255, 255, 255);
+                background-color: black;
+
+                /* Reset list styles */
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .dropdown a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+
+                    .dropdown li {
+                        /* Spacing */
+                        padding: 8px;
+
+                        /* Used to position the sub dropdown */
+                        position: relative;
+                    }
+
+                    /* The sub dropdown */
+                    .dropdown ul {
+                        /* Border */
+                        border: 1px solid rgb(0, 0, 0);
+                        background-color: rgb(0, 0, 0);
+
+                        /* Hidden by default */
+                        display: none;
+
+                        /* Absolute position */
+                        left: 0;
+                        position: absolute;
+                        top: 100%;
+
+                        /* Reset styles */
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+
+                        /* Width */
+                        width: 200px;
+                    }
+
+                    /* The second level sub dropdown */
+                    .dropdown ul ul {
+                        left: 100%;
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    /* Change background color of list item when being hovered */
+                    .dropdown li:hover {
+                        background-color: rgb(83, 83, 83);
+                    }
+
+                    /* Show the direct sub dropdown when hovering the list item */
+                    .dropdown li:hover > ul {
+                        display: block;
+                    }
+            .landing_page{
+                background-color: rgb(0, 0, 0);
+                border-bottom-left-radius: 50% 40%;
+                border-bottom-right-radius: 50% 40%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(auto,600px));
+                justify-content: center;
+            }
+            .landing_page img{
+                max-width: 400px;
+                border-radius: 50%;
+                padding-left: 125px;
+                padding-right: 10px;
+                padding-top: 100px;
+                padding-bottom: 200px;
+                
+            }
+            .Greeting{
+                text-align: center;
+                color: antiquewhite;
+                margin-top: 250px;
+                font-family: 'robot',sans-serif;
+            }
+            .Greeting h1{
+                font-size: 5em;
+            }
+            .Greeting p{
+                margin-top: 20px;
+                font-size: 1.5em;
+                color: rgba(250, 235, 215, 0.664);
+            }
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px,auto));
+                justify-content: center;
+                margin-top: 1.5em;
+            }
+            .cards_item img{
+                border-radius: 5px;
+            }
+            .cards_item img:hover{
+                box-shadow: 7px 7px 15px 10px rgba(0, 0, 0, 0.4);
+            }
+            .cards_item a{
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                font-family: 'Outfit',sans-serif;
+            }
+            .cards_item a figcaption{
+                padding-top: 0.5em;
+                padding-bottom: 0.7em;
+            }
+            .container2 h1{
+                text-align: center;
+                font-family: 'Outfit',sans-serif;
+                font-size: 3em;
+                margin-top: 0.5em;
+
+            }
+            .container2{
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            hr{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            #totop{
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: #e62739;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+                color: white;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
